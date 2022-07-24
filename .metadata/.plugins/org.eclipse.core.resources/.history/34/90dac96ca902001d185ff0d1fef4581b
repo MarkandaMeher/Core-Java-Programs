@@ -1,0 +1,13 @@
+package ThisSuperStaticFinal;
+
+public class Examples {
+
+}
+class Test
+{
+	public static void main(String[] args) {
+		final int x=10;
+		x=x+1;//Compilation error, as we are trying to modify the final variable(constant)
+		System.out.println(x);
+	}
+}

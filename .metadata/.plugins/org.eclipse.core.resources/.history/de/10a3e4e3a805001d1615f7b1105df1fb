@@ -1,0 +1,17 @@
+package ExceptionHandling;
+
+public class Examples {
+
+}
+class Main2{
+	public void first(){int data=50/0;  }
+	public void second(){first();}
+	public void third(){try{second();}
+				catch(Exception e){ System.out.println("Exception occurred");}
+		}
+	public static void main(String [] args){
+	Main2 ob = new Main2();
+	ob.third();
+	System.out.println("Thank You");
+		}
+}

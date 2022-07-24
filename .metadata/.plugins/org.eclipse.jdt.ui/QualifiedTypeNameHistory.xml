@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Variables.InstanceVariable"/>
+    <fullyQualifiedTypeName name="Variables.ClassVariableOrStaticVariable"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ArrayAndEnum.Color"/>
+    <fullyQualifiedTypeName name="ObjectClassesMethodsAndConstructors.Student"/>
+    <fullyQualifiedTypeName name="WrapperClasses.ArrayList"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.ZoneId"/>
+    <fullyQualifiedTypeName name="java.time.Month"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="InterfacesAndLamdaExpression.Rectangle"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="NestedClassesinJava.OuterClass.StaticNestedClass"/>
+    <fullyQualifiedTypeName name="NestedClassesinJava.OuterClass"/>
+    <fullyQualifiedTypeName name="NestedClassesinJava.OuterClass.InnerClass"/>
+    <fullyQualifiedTypeName name="NestedClassesinJava.TestMemberOuter1"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
+</qualifiedTypeNameHistroy>

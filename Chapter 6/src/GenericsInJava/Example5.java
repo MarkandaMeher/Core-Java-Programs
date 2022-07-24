@@ -1,0 +1,50 @@
+package GenericsInJava;
+import java.util.*;
+public class Example5 {
+
+}
+
+//A Simple Java program to demonstrate that NOT using
+//generics can cause run time exceptions
+
+class Testt
+{
+	public static void main(String[] args)
+	{
+		// Creatinga an ArrayList without any type specified
+		ArrayList al = new ArrayList();
+
+		al.add("Sachin");
+		al.add("Rahul");
+		al.add(10); // Compiler allows this
+
+		String s1 = (String)al.get(0);
+		String s2 = (String)al.get(1);
+
+		// Causes Runtime Exception
+		String s3 = (String)al.get(2);
+	}
+}
+
+//Using generics converts run time exceptions into
+//compile time exception.
+
+
+class Testv
+{
+	public static void main(String[] args)
+	{
+		// Creating a an ArrayList with String specified
+		ArrayList <String> al = new ArrayList<String>();
+
+		al.add("Sachin");
+		al.add("Rahul");
+
+		// Now Compiler doesn't allow this
+		//al.add(10);
+
+		String s1 = (String)al.get(0);
+		String s2 = (String)al.get(1);
+		//String s3 = (String)al.get(2);
+	}
+}

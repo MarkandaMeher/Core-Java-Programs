@@ -1,0 +1,31 @@
+package FileHandling;
+import java.io.FileInputStream;
+public class FileInputStreamExamples {
+public static void main(String[] args) {
+	//reads single line character
+	try {
+		FileInputStream fin = new FileInputStream("D:\\Java PPT Programs\\Chapter 5\\src\\FileHandling\\test2.txt");
+		int i = fin.read();
+		System.out.println((char)i);
+		fin.close();
+		
+	}catch(Exception e) {
+		System.out.println(e);
+	}
+}
+}
+
+class Ex22{
+	public static void main(String[] args) {
+		try {
+			FileInputStream fin = FileInputStream("D:\\Java PPT Programs\\Chapter 5\\src\\FileHandling\\test.txt");
+			int i =0;
+			while((i=fin.read())!=-1) {
+				System.out.println((char)i);
+			}
+			fin.close();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+}

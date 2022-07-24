@@ -1,0 +1,15 @@
+package FileHandling;
+import java.io.*;
+public class FileClassExample {
+public static void main(String[] args) {
+	File ref1 = new File("D:\\Java PPT Programs\\Chapter 5\\src\\FileHandling");
+	System.out.println(ref1.isFile());
+	System.out.println(ref1.isDirectory());
+	File ref2 = new File("D:\\Java PPT Programs\\Chapter 5\\src\\FileHandling\\abc.txt");
+	System.out.println(ref2.isFile());
+	System.out.println(ref2.isDirectory());
+	System.out.println(ref2.exists());
+	System.out.println(ref2.getName());
+	System.out.println(ref2.getPath());
+}
+}

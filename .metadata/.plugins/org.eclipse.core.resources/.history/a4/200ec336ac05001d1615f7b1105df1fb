@@ -1,0 +1,20 @@
+package ExceptionHandling;
+
+public class Questions {
+
+}
+class Test2 extends Exception { }
+ class Maina {
+   public static void main(String args[]) { 
+      try {
+         throw new Test2();
+      }
+      catch(Test2 t) {
+    	  System.out.println(t);
+         System.out.println("Got the Test Exception");
+      }
+      finally {
+         System.out.println("Inside finally block ");
+      }
+  }
+}

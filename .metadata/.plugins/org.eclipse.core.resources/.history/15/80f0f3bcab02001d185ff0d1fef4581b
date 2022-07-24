@@ -1,0 +1,68 @@
+package ThisSuperStaticFinal;
+
+public class Examples {
+
+}
+class Test
+{
+	public static void main(String[] args) {
+		final int x=10;
+		x=x+1;//Compilation error, as we are trying to modify the final variable(constant)
+		System.out.println(x);
+	}
+}
+final class A 
+{
+    
+}
+class B extends A // Compilation error [A is final and non-inheritable]
+{
+    
+}
+class Test2
+{
+	public static void main(String[] args) {
+		B obj=new B();
+	}
+}
+
+class A2 
+{
+    final void show()
+    {
+        System.out.println("A");
+    }
+}
+class B2 extends A2 
+{
+    void show()//Compilation Error:show() in B cannot override show() in A(Overridden method is final)
+    {
+        System.out.println("B");
+    }
+}
+ class Test3
+{
+	public static void main(String[] args) {
+		B2 obj=new B2();
+		obj.show();
+	}
+}
+ 
+ final class Employee{  
+	 final String pancardNumber;  
+	 public Employee(String pancardNumber){  
+	 this.pancardNumber=pancardNumber;  
+	 }  
+	 public String getPancardNumber(){  
+	 return pancardNumber;  
+	 }
+	 }  
+	 class Main
+	 {
+	     public static void main(String[] args)
+	     {
+	         Employee obj=new Employee("123");
+	         System.out.println(obj.getPancardNumber());
+	     }
+	 }
+

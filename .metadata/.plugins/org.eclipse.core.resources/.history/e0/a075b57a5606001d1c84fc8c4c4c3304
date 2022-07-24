@@ -1,0 +1,12 @@
+package AssertionsExamples;
+
+public class Examples {
+public static void main(String[] args) {
+	static double calculatInt(int amt,double roi,int years) {
+		//Usint assertion
+		assert amt>0;
+		double interest = (amt*roi*years);
+		return interest;
+	}
+}
+}

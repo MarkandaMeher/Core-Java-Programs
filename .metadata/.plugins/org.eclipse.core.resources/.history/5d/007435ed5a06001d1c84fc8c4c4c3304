@@ -1,0 +1,11 @@
+package AssertionExamples;
+
+public class pqr {
+	public static void main(String[] args) {
+		// get a number in the first argument
+		int num = Integer.parseInt(args[0]);
+		//assert num <= 10;// stops if number > 10
+		assert num <=10 : "Number is greater than 10";	
+		System.out.println("All assumptions are correct");
+		}
+}

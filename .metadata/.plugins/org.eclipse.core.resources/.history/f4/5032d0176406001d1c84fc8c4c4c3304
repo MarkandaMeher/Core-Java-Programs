@@ -1,0 +1,9 @@
+package FileHandling;
+import java.io.*;
+public class FileClassExample {
+public static void main(String[] args) {
+	File ref1 = new File("D:\\Java PPT Programs\\Chapter 5\\src\\FileHandling");
+	System.out.println(ref1.isFile());
+	System.out.println(ref1.isDirectory());
+}
+}

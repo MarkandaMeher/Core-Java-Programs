@@ -1,0 +1,71 @@
+package WrapperClasses;
+
+public class Examples {
+	public static void main (String[] args) 
+	{ 
+		// creating an Integer Object 
+		// with value 10. 
+		Integer i = new Integer(10); 
+		// unboxing the Object 
+		int i1 = i; 
+		System.out.println("Value of i: " + i); 
+		System.out.println("Value of i1: " + i1); 
+		//Autoboxing of char 
+		Character ch1 = 'a'; 
+		// Auto-unboxing of Character 
+		char ch2 = ch1; 
+		System.out.println("Value of ch1: " + ch1); 
+		System.out.println("Value of ch2: " + ch2); 
+
+	} 
+
+}
+
+//Java program to demonstrate typeValue() method
+class Test
+{
+	public static void main(String[] args) 
+	{
+	// Creating a Double Class object with value "6.9685"
+		Double d = new Double("6.9685");	
+	// Converting this Double(Number) object to 
+		// different primitive data types
+		byte b = d.byteValue(); 
+		short s = d.shortValue(); 
+		int i = d.intValue(); 
+		long l = d.longValue(); 
+		float f = d.floatValue(); 
+		double d1 = d.doubleValue(); 
+System.out.println("value of d after converting it to byte : " +b);
+System.out.println("value of d after converting it to short : " + s);
+System.out.println("value of d after converting it to int : " + i);
+	System.out.println("value of d after converting it to long : " + l);	
+	System.out.println("value of d after converting it to float : " + f);
+	System.out.println("value of d after converting it to double : " + d1);
+	}
+}
+
+
+//Java program to demonstrate Integer.parseInt() method
+ class Test2
+{
+	public static void main(String[] args)
+	{
+		// parsing different strings
+		int z = Integer.parseInt("654",8); 
+		int a = Integer.parseInt("-FF", 16);
+	long l = Long.parseLong("2158611234",10); 
+		System.out.println(z);
+		System.out.println(a);
+		System.out.println(l);			
+//run-time NumberFormatException will occur here
+		// “Hello" is not a parsable string
+		int x = Integer.parseInt("Hello",8); 
+//run-time NumberFormatException will occur here
+	// (for octal(8),allowed digits are [0-7])
+		int y = Integer.parseInt("99",8); 
+			
+	}
+}
+
+
